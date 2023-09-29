@@ -131,13 +131,15 @@ switch (fruta){
 
 //Ej 18
 
-let asterisco="*";
 
-for(let i=0; i<9;i++){
+
+for(let i=1; i<=9;i++){
+    document.write("")
     for(let j=0;j<i;j++){
         document.write("*")
     }
     document.write("<br>")
 }
+
 
 
