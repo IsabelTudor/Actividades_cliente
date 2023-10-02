@@ -55,7 +55,14 @@ if(edad <=12){
 }
 
 //Ej 14
-let edad= prompt("Introduce tu edad");
+let edad;
+do{
+    console.log(edad);
+}
+while(!edad=parseInt(prompt("Introduce tu edad"))){
+
+
+
 if(edad <=12){
     alert("Eres un niñ@");
 }else if(edad <=26){
@@ -65,27 +72,12 @@ if(edad <=12){
 }else{
     alert("Eres un@ jubilad@");
 }
-let indicador= edad >=0? "Su edad es mayor que 0" : "Se ha producido un error" ;
-alert(indicador);
-let pregunta=confirm("¿Quiere introducir otra edad?");
-if(pregunta===true){
-    let edad2=prompt("Introduce tu edad");
-    alert(edad2);
-    if(edad2 <=12){
-        alert("Eres un niñ@");
-    }else if(edad2 <=26){
-        alert("Eres un@ joven");
-    }else if(edad2 <=65){
-        alert("Eres un@ adult@");
-    }else{
-        alert("Eres un@ jubilad@");
-    }
-    let indicador2= edad >=0? "Su edad es mayor que 0" : "Se ha producido un error";
+let indicador2= edad >=0? "Su edad es mayor que 0" : "Se ha producido un error";
 alert(indicador2);
 }else{
     alert("Adios");
 }
-
+}
 
 //Ej15
 
@@ -127,7 +119,7 @@ switch (fruta){
         document.write("Fruta desconocida");
             
 }
-*/
+
 
 //Ej 18
 
@@ -140,6 +132,38 @@ for(let i=1; i<=9;i++){
     }
     document.write("<br>")
 }
+
+
+*/
+
+//Ej 20
+
+
+function suma1(a,b,c){
+    return a+b+c;
+}
+//------------------------------------------------
+let suma2 =function(w,y,z){
+    return w+y+z;
+}
+let suma3=(a,b,c)=> a+b+c 
+
+//--------------------------------------------------
+
+//EJ 21
+function operacionesEncadenadas(a,b,operacion1,operacion2,callback){
+    operacion1(a,b);
+    operacion2(a,b);
+    callback();
+
+}
+
+function suma(a,b) {return a+b;}
+function produto(a,b){return a*b;}
+
+operacionesEncadenadas(5, 2, suma(a, b), produto(a, b), ()=>alert("hola"));
+
+
 
 
 
