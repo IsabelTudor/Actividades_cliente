@@ -122,21 +122,35 @@ switch (fruta){
 
 
 //Ej 18
+*/
 
+const mitad=Math.floor(9/2);
 
+for(let i=0; i<=mitad;i++){
+    let linea='';
+    for(let j=0;j<mitad-i;j++){
+        linea+='';
+        for(let k=0;k<2*i+1;k++){
+            linea+='*';
+        }
+    }console.log(linea);
+}
 
-for(let i=1; i<=9;i++){
-    document.write("")
-    for(let j=0;j<i;j++){
-        document.write("*")
+for(let i=mitad-1;i>=0;i++){
+    let linea='';
+    for(let j=0;j<mitad-i;j++){
+        linea+='';
+        for(let k=0;k<2*i+1;k++){
+            linea+='*';
+        }
+        console.log(linea);
     }
-    document.write("<br>")
 }
 
 
-*/
 
-//Ej 20
+
+/*//Ej 20
 
 
 function suma1(a,b,c){
@@ -164,6 +178,6 @@ function produto(a,b){return a*b;}
 operacionesEncadenadas(5, 2, suma(a, b), produto(a, b), ()=>alert("hola"));
 
 
-
+*/
 
 
