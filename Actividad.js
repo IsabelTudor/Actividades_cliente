@@ -123,7 +123,7 @@ switch (fruta){
 
 //Ej 18
 */
-
+/*
 const mitad=Math.floor(9/2);
 
 for(let i=0; i<=mitad;i++){
@@ -150,7 +150,7 @@ for(let i=mitad-1;i>=0;i++){
 
 
 
-/*//Ej 20
+//Ej 20
 
 
 function suma1(a,b,c){
@@ -179,5 +179,34 @@ operacionesEncadenadas(5, 2, suma(a, b), produto(a, b), ()=>alert("hola"));
 
 
 */
+
+//indexOf
+
+const frutas = ["manzana", "plátano", "uva", "naranja", "pera","plátano","plátano"];
+console.log(frutas.indexOf("plátano"));
+
+
+//lastIndexOf
+console.log(frutas.lastIndexOf(("plátano")));
+
+//find
+
+const numeros=[158,6898,85,2,589,365,7];
+
+const numero=numeros.find((element)=> element > 500);
+console.log(numero);
+
+//findIndex
+
+const numeroMayor=(element) => element > 160;
+console.log(numeros.findIndex(numeroMayor));
+
+//findLastIndex
+
+
+const numeroMayor2=(element) => element > 160;
+console.log(numeros.findLastIndex(numeroMayor2));
+
+
 
 
