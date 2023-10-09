@@ -233,8 +233,57 @@ const palabras = ["manzana", "gato", "sol", "montaña", "libro", "ciudad", "agua
 
 let palabraLarga=palabras.find()
 
+//Ej 24
 
-//To do: hacer los ejercicios de arrays
+const palabrasAleatorias = ["gato", "perro", "manzana", "pelota", "casa", "sol", "luna", "coche"];
+
+function busca(Array){
+    let palabraLarga="";
+
+    for(let i=0;i<Array.length;i++){
+        const palabraActual=Array[i];
+        if(palabraActual.length>palabraLarga.length){
+            palabraLarga=palabraActual;
+        }
+    }
+    return palabraLarga;
+}
+
+const palabraMasLarga=busca(palabrasAleatorias);
+console.log(`La palabra más larga es ${palabraMasLarga}`);
+
+
+//Ej 25
+
+const valores=[5,89,567,589,65,12,48,5,54968,5787];
+
+let valoresSet=new Set(valores);
+
+console.log(valoresSet);
+*/
+
+//Ej 26
+const paises = ["México", "Japón", "Italia", "Australia", "Brasil", "Canadá", "Francia", "Alemania", "India", "Argentina", "España", "China", "Sudáfrica", "Rusia", "Corea del Sur", "Reino Unido", "Estados Unidos", "Indonesia", "Egipto", "Turquía"];
+//a
+mostrarArray(paises)
+function mostrarArray(Array){
+document.write(`Hay ${Array.length} paises`) 
+document.write(`<ol>`)
+
+
+for(let i=0;i< Array.length;i++){
+  
+    document.write(`<li>${Array[i]}</li>`)    
+    
+}
+document.write(`<ol>`)  
+}
+
+function mostrarArrayAlReves(Array){
+    document.write()
+}
+
+/*
 
 //Ej 27
 
@@ -243,13 +292,15 @@ const x= Math.round(Math.sqrt(69));
 console.log(x);
 
 document.write(`El redonde que hemos utilizado es round ${x}`)
-*/
+
 //Ej 28 
 
 const y=Math.random()*5;
 console.log(y,`Esta entre el rango 0 y 5`);
 
+*/
 
+//Ej 29
 
 
 
