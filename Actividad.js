@@ -226,13 +226,23 @@ let contadorNumerosPares=numeros.reduce((cuantosPares,valorActual)=>{
     return cuantosPares;
 }
 ,0);
-*/
+
 
 //Ej 23
 const palabras = ["manzana", "gato", "sol", "montaña", "libro", "ciudad", "agua", "casa", "perro", "avión"];
 
 let palabraLarga=palabras.find()
+*/
 
+//To do: hacer los ejercicios de arrays
+
+//Ej 27
+
+const x= Math.ceil(Math.sqrt(2));
+
+console.log(x);
+
+document.write(`El redonde que hemos utilizado es ceil ${x}`)
 
 
 
