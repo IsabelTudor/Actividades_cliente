@@ -178,7 +178,7 @@ function produto(a,b){return a*b;}
 operacionesEncadenadas(5, 2, suma(a, b), produto(a, b), ()=>alert("hola"));
 
 
-*/
+
 
 //indexOf
 
@@ -206,6 +206,38 @@ console.log(numeros.findIndex(numeroMayor));
 
 const numeroMayor2=(element) => element > 160;
 console.log(numeros.findLastIndex(numeroMayor2));
+
+
+
+//EJ 21
+const numeros=[1,2,3,4,5,6,7];
+
+let result= numeros.reduce((sum, current)=> sum+current);
+
+alert (result);
+
+//Ej 22
+
+let contadorNumerosPares=numeros.reduce((cuantosPares,valorActual)=>{
+     if(valorActual%2==0){
+        document.writeln(valorActual);
+        cuantosPares++;
+    }
+    return cuantosPares;
+}
+,0);
+*/
+
+//Ej 23
+const palabras = ["manzana", "gato", "sol", "montaña", "libro", "ciudad", "agua", "casa", "perro", "avión"];
+
+let palabraLarga=palabras.find()
+
+
+
+
+
+
 
 
 
