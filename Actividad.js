@@ -264,23 +264,32 @@ console.log(valoresSet);
 
 //Ej 26
 const paises = ["México", "Japón", "Italia", "Australia", "Brasil", "Canadá", "Francia", "Alemania", "India", "Argentina", "España", "China", "Sudáfrica", "Rusia", "Corea del Sur", "Reino Unido", "Estados Unidos", "Indonesia", "Egipto", "Turquía"];
-//a
-mostrarArray(paises)
+
+mostrarArray(paises);
+mostrarArrayAlReves(paises)
+
 function mostrarArray(Array){
-document.write(`Hay ${Array.length} paises`) 
-document.write(`<ol>`)
+    document.write(`Hay ${Array.length} paises`); 
+    document.write(`<ol>`);
 
 
-for(let i=0;i< Array.length;i++){
+    for(let i=0;i< Array.length;i++){
   
-    document.write(`<li>${Array[i]}</li>`)    
+        document.write(`<li>${Array[i]}</li>`);    
     
-}
-document.write(`<ol>`)  
+    }
+    document.write(`<ol>`);  
 }
 
 function mostrarArrayAlReves(Array){
-    document.write()
+    Array.reverse();
+
+    document.write(`<ol>`);
+
+    for(let i=0;i<Array.length;i++){
+        document.write(`<li>${Array[i]}</li>`);
+    }
+    document.write(`</ol>`);
 }
 
 /*
