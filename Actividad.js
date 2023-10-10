@@ -267,6 +267,7 @@ const paises = ["México", "Japón", "Italia", "Australia", "Brasil", "Canadá",
 
 mostrarArray(paises);
 mostrarArrayAlReves(paises)
+añadirElemento(paises)
 
 function mostrarArray(Array){
     document.write(`Hay ${Array.length} paises`); 
@@ -290,6 +291,16 @@ function mostrarArrayAlReves(Array){
         document.write(`<li>${Array[i]}</li>`);
     }
     document.write(`</ol>`);
+}
+
+function añadirElemento(Array){
+    let paisNuevo=prompt("Añada un país");
+    let posicion=parseInt(prompt("Indique la posición"));
+
+    Array.splice(posicion,0,paisNuevo);
+    console.log(Array);
+
+
 }
 
 /*
