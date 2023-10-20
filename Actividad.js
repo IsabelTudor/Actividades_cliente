@@ -260,7 +260,7 @@ const valores=[5,89,567,589,65,12,48,5,54968,5787];
 let valoresSet=new Set(valores);
 
 console.log(valoresSet);
-*/
+
 
 //Ej 26
 const paises = ["México", "Japón", "Italia", "Australia", "Brasil", "Canadá", "Francia", "Alemania", "India", "Argentina", "España", "China", "Sudáfrica", "Rusia", "Corea del Sur", "Reino Unido", "Estados Unidos", "Indonesia", "Egipto", "Turquía"];
@@ -303,7 +303,7 @@ function añadirElemento(Array){
 
 }
 
-/*
+
 
 //Ej 27
 
@@ -321,6 +321,7 @@ console.log(y,`Esta entre el rango 0 y 5`);
 */
 
 //Ej 29
+
 
 
 
